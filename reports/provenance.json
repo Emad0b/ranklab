@@ -1,0 +1,26 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "__init__.py": "5c85301efcdb8daec41bb7d6724680d0797bfc1b88d3752bb363e5b8478aefaf",
+    "cli.py": "f07181a2e0ad5b1d9f9560f9025f6ba81dd9de083b7fc7b45a184e5ffc335650",
+    "data.py": "86ab4d98f0e8821e8101aeea6fa0d2b5d5ac368cb556ea84eece744ab3cdd076",
+    "evaluation.py": "613cc72f17c73eee8bd706de458cfa1f152c6414f5d5e2f472e2419ef6414ea7",
+    "fetch_data.py": "35664e697ef8e9e8286da9550a8f01d55c2b2b11d89aa311866dad52ecb975ef",
+    "models.py": "acf713af07e634a30e055dc7e4ce51df19a0e7b34cf518d491522eb80520dee7",
+    "provenance.py": "a154e9d009a7f6c91d3cccebc1a80146f1667acf14876faaa9b1b364a05b0e5e"
+  },
+  "data": {
+    "name": "MovieLens 100K",
+    "creator": "GroupLens Research, University of Minnesota",
+    "url": "https://files.grouplens.org/datasets/movielens/ml-100k.zip",
+    "filename": "ml-100k.zip",
+    "sha256": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229",
+    "license": "MovieLens research-use terms; no raw redistribution; commercial use requires permission",
+    "citation": "Harper and Konstan (2015), The MovieLens Datasets: History and Context. DOI 10.1145/2827872"
+  }
+}

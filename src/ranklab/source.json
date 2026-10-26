@@ -1,0 +1,9 @@
+{
+  "name": "MovieLens 100K",
+  "creator": "GroupLens Research, University of Minnesota",
+  "url": "https://files.grouplens.org/datasets/movielens/ml-100k.zip",
+  "filename": "ml-100k.zip",
+  "sha256": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229",
+  "license": "MovieLens research-use terms; no raw redistribution; commercial use requires permission",
+  "citation": "Harper and Konstan (2015), The MovieLens Datasets: History and Context. DOI 10.1145/2827872"
+}

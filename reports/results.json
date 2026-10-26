@@ -1,0 +1,380 @@
+{
+  "source": {
+    "name": "MovieLens 100K",
+    "creator": "GroupLens Research, University of Minnesota",
+    "url": "https://files.grouplens.org/datasets/movielens/ml-100k.zip",
+    "filename": "ml-100k.zip",
+    "sha256": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229",
+    "license": "MovieLens research-use terms; no raw redistribution; commercial use requires permission",
+    "citation": "Harper and Konstan (2015), The MovieLens Datasets: History and Context. DOI 10.1145/2827872"
+  },
+  "protocol": {
+    "train_cutoff": 887039271,
+    "test_cutoff": 891036415,
+    "train_rows": 69997,
+    "validation_rows": 15003,
+    "test_rows": 15000,
+    "epochs": 12,
+    "seed": 17,
+    "positive_rating_at_least": 4,
+    "catalogue_items": 1654,
+    "evaluation": "Frozen training history; full eligible catalogue, mask every previously rated training item; no sampled test negatives."
+  },
+  "models": {
+    "popularity": {
+      "validation": {
+        "users": 239,
+        "recall_at_10": 0.06974075307248677,
+        "ndcg_at_10": 0.23219621259639878,
+        "candidate_recall_at_100": 0.3955948650059718,
+        "mean_genre_diversity": 0.6950854037265167,
+        "catalogue_coverage": 0.04050785973397823,
+        "p50_ms": 0.3569,
+        "p95_ms": 0.57705,
+        "warm_users": {
+          "users": 105,
+          "recall_at_10": 0.06651138386937844,
+          "ndcg_at_10": 0.12182574803667863
+        },
+        "cold_users": {
+          "users": 134,
+          "recall_at_10": 0.07227122894059404,
+          "ndcg_at_10": 0.3186805318409556
+        },
+        "cold_item_relevant": 123,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 7939,
+        "eligible_unique_positive_pairs": 7869
+      },
+      "test": {
+        "users": 209,
+        "recall_at_10": 0.06751233667932653,
+        "ndcg_at_10": 0.25962153108168856,
+        "candidate_recall_at_100": 0.3697293957207721,
+        "mean_genre_diversity": 0.6945284036049733,
+        "catalogue_coverage": 0.037484885126964934,
+        "p50_ms": 0.3382,
+        "p95_ms": 0.5446199999999999,
+        "warm_users": {
+          "users": 54,
+          "recall_at_10": 0.05035529785772402,
+          "ndcg_at_10": 0.11986175365557135
+        },
+        "cold_users": {
+          "users": 155,
+          "recall_at_10": 0.07348962762362676,
+          "ndcg_at_10": 0.30831203418498093
+        },
+        "cold_item_relevant": 158,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 8471,
+        "eligible_unique_positive_pairs": 8345
+      },
+      "test_minus_popularity_ndcg_95ci": {
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      }
+    },
+    "matrix_factorisation": {
+      "validation": {
+        "users": 239,
+        "recall_at_10": 0.06724733145278768,
+        "ndcg_at_10": 0.22574069300953273,
+        "candidate_recall_at_100": 0.4016506363887443,
+        "mean_genre_diversity": 0.7032740233394971,
+        "catalogue_coverage": 0.05743651753325272,
+        "p50_ms": 0.3762,
+        "p95_ms": 0.60554,
+        "warm_users": {
+          "users": 105,
+          "recall_at_10": 0.06083588132549191,
+          "ndcg_at_10": 0.10713175583419321
+        },
+        "cold_users": {
+          "users": 134,
+          "recall_at_10": 0.07227122894059404,
+          "ndcg_at_10": 0.3186805318409556
+        },
+        "cold_item_relevant": 123,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 7939,
+        "eligible_unique_positive_pairs": 7869
+      },
+      "test": {
+        "users": 209,
+        "recall_at_10": 0.06514971707212487,
+        "ndcg_at_10": 0.25673472483480575,
+        "candidate_recall_at_100": 0.3805036010441534,
+        "mean_genre_diversity": 0.7021774760061786,
+        "catalogue_coverage": 0.0501813784764208,
+        "p50_ms": 0.3659,
+        "p95_ms": 0.59314,
+        "warm_users": {
+          "users": 54,
+          "recall_at_10": 0.041211084933554666,
+          "ndcg_at_10": 0.1086887442926361
+        },
+        "cold_users": {
+          "users": 155,
+          "recall_at_10": 0.07348962762362676,
+          "ndcg_at_10": 0.30831203418498093
+        },
+        "cold_item_relevant": 158,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 8471,
+        "eligible_unique_positive_pairs": 8345
+      },
+      "test_minus_popularity_ndcg_95ci": {
+        "mean": -0.002886806246882799,
+        "low": -0.007887645759156096,
+        "high": 0.002331728505927639
+      }
+    },
+    "two_tower": {
+      "validation": {
+        "users": 239,
+        "recall_at_10": 0.08030113518125032,
+        "ndcg_at_10": 0.23155145067195274,
+        "candidate_recall_at_100": 0.39220390348884954,
+        "mean_genre_diversity": 0.6311002787365092,
+        "catalogue_coverage": 0.06650544135429262,
+        "p50_ms": 0.2357,
+        "p95_ms": 0.36973,
+        "warm_users": {
+          "users": 105,
+          "recall_at_10": 0.09054882505027835,
+          "ndcg_at_10": 0.12035814708484434
+        },
+        "cold_users": {
+          "users": 134,
+          "recall_at_10": 0.07227122894059404,
+          "ndcg_at_10": 0.3186805318409556
+        },
+        "cold_item_relevant": 123,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 7939,
+        "eligible_unique_positive_pairs": 7869
+      },
+      "test": {
+        "users": 209,
+        "recall_at_10": 0.06979884550891473,
+        "ndcg_at_10": 0.26482185018974225,
+        "candidate_recall_at_100": 0.3866225077414788,
+        "mean_genre_diversity": 0.661146899469634,
+        "catalogue_coverage": 0.05804111245465538,
+        "p50_ms": 0.3654,
+        "p95_ms": 0.6444599999999999,
+        "warm_users": {
+          "users": 54,
+          "recall_at_10": 0.059204933883352386,
+          "ndcg_at_10": 0.1399889146478531
+        },
+        "cold_users": {
+          "users": 155,
+          "recall_at_10": 0.07348962762362676,
+          "ndcg_at_10": 0.30831203418498093
+        },
+        "cold_item_relevant": 158,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 8471,
+        "eligible_unique_positive_pairs": 8345
+      },
+      "test_minus_popularity_ndcg_95ci": {
+        "mean": 0.005200319108053658,
+        "low": -0.0008394364525457525,
+        "high": 0.012245016855899656
+      }
+    }
+  },
+  "validation_selected": "popularity",
+  "mmr_validation_selected_weight": 1.0,
+  "mmr": {
+    "0.6": {
+      "validation": {
+        "users": 239,
+        "recall_at_10": 0.07603095518872874,
+        "ndcg_at_10": 0.2286368941600526,
+        "candidate_recall_at_100": 0.3955948650059718,
+        "mean_genre_diversity": 0.7764971413246134,
+        "catalogue_coverage": 0.04897218863361548,
+        "p50_ms": 0.5136,
+        "p95_ms": 1.15549,
+        "warm_users": {
+          "users": 105,
+          "recall_at_10": 0.07011323317754475,
+          "ndcg_at_10": 0.11855831477125851
+        },
+        "cold_users": {
+          "users": 134,
+          "recall_at_10": 0.08066797616764157,
+          "ndcg_at_10": 0.3148924974124659
+        },
+        "cold_item_relevant": 123,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 7939,
+        "eligible_unique_positive_pairs": 7869
+      },
+      "test": {
+        "users": 209,
+        "recall_at_10": 0.07580240120274681,
+        "ndcg_at_10": 0.2658876335388803,
+        "candidate_recall_at_100": 0.3697293957207721,
+        "mean_genre_diversity": 0.7602789365126378,
+        "catalogue_coverage": 0.04353083434099154,
+        "p50_ms": 0.4776,
+        "p95_ms": 0.70072,
+        "warm_users": {
+          "users": 54,
+          "recall_at_10": 0.06522198527343102,
+          "ndcg_at_10": 0.135234094961945
+        },
+        "cold_users": {
+          "users": 155,
+          "recall_at_10": 0.07948848159102456,
+          "ndcg_at_10": 0.31140564052697384
+        },
+        "cold_item_relevant": 158,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 8471,
+        "eligible_unique_positive_pairs": 8345
+      }
+    },
+    "0.8": {
+      "validation": {
+        "users": 239,
+        "recall_at_10": 0.07709703532663799,
+        "ndcg_at_10": 0.23149994696509774,
+        "candidate_recall_at_100": 0.3955948650059718,
+        "mean_genre_diversity": 0.7315791114004198,
+        "catalogue_coverage": 0.04232164449818621,
+        "p50_ms": 0.5205,
+        "p95_ms": 1.18758,
+        "warm_users": {
+          "users": 105,
+          "recall_at_10": 0.07236825665322891,
+          "ndcg_at_10": 0.12165315515822653
+        },
+        "cold_users": {
+          "users": 134,
+          "recall_at_10": 0.08080242160057792,
+          "ndcg_at_10": 0.31757392561973563
+        },
+        "cold_item_relevant": 123,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 7939,
+        "eligible_unique_positive_pairs": 7869
+      },
+      "test": {
+        "users": 209,
+        "recall_at_10": 0.07801385545113027,
+        "ndcg_at_10": 0.26557252529569647,
+        "candidate_recall_at_100": 0.3697293957207721,
+        "mean_genre_diversity": 0.7282080929321895,
+        "catalogue_coverage": 0.0380894800483676,
+        "p50_ms": 0.4855,
+        "p95_ms": 0.7157799999999999,
+        "warm_users": {
+          "users": 54,
+          "recall_at_10": 0.06852367632022013,
+          "ndcg_at_10": 0.1347753940617482
+        },
+        "cold_users": {
+          "users": 155,
+          "recall_at_10": 0.08132011140641507,
+          "ndcg_at_10": 0.3111405581126849
+        },
+        "cold_item_relevant": 158,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 8471,
+        "eligible_unique_positive_pairs": 8345
+      }
+    },
+    "1.0": {
+      "validation": {
+        "users": 239,
+        "recall_at_10": 0.06974075307248677,
+        "ndcg_at_10": 0.23219621259639878,
+        "candidate_recall_at_100": 0.3955948650059718,
+        "mean_genre_diversity": 0.6950854037265167,
+        "catalogue_coverage": 0.04050785973397823,
+        "p50_ms": 0.3594,
+        "p95_ms": 0.5813299999999999,
+        "warm_users": {
+          "users": 105,
+          "recall_at_10": 0.06651138386937844,
+          "ndcg_at_10": 0.12182574803667863
+        },
+        "cold_users": {
+          "users": 134,
+          "recall_at_10": 0.07227122894059404,
+          "ndcg_at_10": 0.3186805318409556
+        },
+        "cold_item_relevant": 123,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 7939,
+        "eligible_unique_positive_pairs": 7869
+      },
+      "test": {
+        "users": 209,
+        "recall_at_10": 0.06751233667932653,
+        "ndcg_at_10": 0.25962153108168856,
+        "candidate_recall_at_100": 0.3697293957207721,
+        "mean_genre_diversity": 0.6945284036049733,
+        "catalogue_coverage": 0.037484885126964934,
+        "p50_ms": 0.3846,
+        "p95_ms": 1.035,
+        "warm_users": {
+          "users": 54,
+          "recall_at_10": 0.05035529785772402,
+          "ndcg_at_10": 0.11986175365557135
+        },
+        "cold_users": {
+          "users": 155,
+          "recall_at_10": 0.07348962762362676,
+          "ndcg_at_10": 0.30831203418498093
+        },
+        "cold_item_relevant": 158,
+        "cold_item_hits": 0,
+        "raw_positive_rows": 8471,
+        "eligible_unique_positive_pairs": 8345
+      }
+    }
+  },
+  "selected_minus_popularity_ndcg_bootstrap": {
+    "mean": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  "losses": {
+    "matrix_factorisation": [
+      0.51297147850871,
+      0.37198606340342033,
+      0.3253201346478633,
+      0.30110241607248567,
+      0.2856183458287263,
+      0.27410034138723577,
+      0.2642675085014489,
+      0.25460413329362075,
+      0.24404418552952306,
+      0.2317523793952729,
+      0.21755540311666435,
+      0.20185643124338984
+    ],
+    "two_tower": [
+      0.34305025017431684,
+      0.2466398786130493,
+      0.2346764777615233,
+      0.23130858582329594,
+      0.2294076333214404,
+      0.22968917085067747,
+      0.228643995256782,
+      0.2286786737614143,
+      0.22843220154004196,
+      0.22800061712960093,
+      0.22769903637526526,
+      0.22766160740814448
+    ]
+  },
+  "limitations": "Ratings are not impression logs. Unobserved items are not known negatives. Offline relevance is not causal engagement or online lift. Latency is warm local NumPy scoring plus full sorting/MMR, not a service SLA."
+}

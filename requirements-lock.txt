@@ -1,0 +1,4 @@
+# Verified Python 3.12 runtime and test tooling.
+numpy==1.26.4
+scipy==1.17.1
+pytest==9.1.1

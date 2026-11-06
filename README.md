@@ -1,5 +1,7 @@
 # RankLab
 
+RankLab compares different ways to recommend movies based on what people have liked before. Use it to test whether a recommendation method finds relevant films and offers a varied list.
+
 A reproducible recommendation-system benchmark with popularity, pairwise matrix factorisation, a nonlinear two-tower model and diversity-aware re-ranking. Real MovieLens 100K data; no website or paid API required.
 
 ## Implemented
